@@ -24,4 +24,4 @@ function App() {
 
 export default App;
 
-//HomePage and ContactPage will be blank for now. Our work is found at localhost:3000/directory.
+//ContactPage will be blank for now. Our work is found at localhost:3000/directory.
