@@ -1,16 +1,27 @@
+import { Routes, Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
 import Header from './components/Header';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import Footer from './components/Footer';
+import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-    <Header/>
-    <CampsitesDirectoryPage/>
-    <Footer/>
+      <Header/>
+      <Routes>
+        <Route path= '/' element={<HomePage/>} />
+        <Route path= 'contact' element={<ContactPage/>} />
+        <Route path= 'directory' element={<CampsitesDirectoryPage/>} />
+        <Route path= 'directory/:campsiteId' element={<CampsiteDetailPage/>} />
+      </Routes>
+      <Footer/>
 </div>
 );
 }
 
 export default App;
+
+//HomePage and ContactPage will be blank for now. Our work is found at localhost:3000/directory.
