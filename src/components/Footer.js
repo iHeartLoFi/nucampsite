@@ -9,9 +9,9 @@ const Footer=()=>{
                     <h5>Links</h5>
                     <ul className='list-unstyled'>
                         <li><Link to = '/'>Home</Link></li>
-                        <li><Link to = '/directory'></Link>Directory</li>
-                        <li><Link to = '/about'></Link>About</li>
-                        <li><Link to = '/contact'></Link>Contact</li>
+                        <li><Link to = '/directory'>Directory</Link></li>
+                        <li><Link to = '/about'>About</Link></li>
+                        <li><Link to = '/contact'>Contact</Link></li>
                     </ul>
                 </Col>
                 <Col xs='6' sm='3' className='text-center'>
