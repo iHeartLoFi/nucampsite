@@ -1,0 +1,11 @@
+These are important notes
+
+If npm start doesn't work, check your Json file and debug npm start.
+
+Quickly CD to Json server folder:
+cd ~/Desktop/NucampFolder/json-server
+
+The "Run Server" command for the Json server is:
+json-server -H 0.0.0.0 --watch db.json -p 3001 -d 2000
+
+YOU MUST RUN THE ABOVE COMMAND IN ORDER FOR THE SITE TO WORK.
