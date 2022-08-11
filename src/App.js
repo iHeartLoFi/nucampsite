@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
+import {fetchPartners } from './features/partners/partnersSlice';
+import{fetchPromotions} from './features/promotions/promotionsSlice';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
@@ -14,9 +16,11 @@ import './App.css';
 
 function App() {
   const dispatch = useDispatch();
-  
+
   useEffect(()=> {
     dispatch(fetchCampsites());
+    dispatch(fetchPartners());
+    dispatch(fetchPromotions());
   }, [dispatch]);
 
   return (
@@ -35,5 +39,3 @@ function App() {
 }
 
 export default App;
-
-//ContactPage will be blank for now. Our work is found at localhost:3000/directory.
